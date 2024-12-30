@@ -1,18 +1,16 @@
 import React, { useState } from "react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import Card from "./Card";
 
-const Sidebar = ({ sections, setActiveSection }) => {
+const Sidebar = ({ sections, setActiveSection, activeSection }) => {
   return (
-    <div className="w-full sm:w-1/4 lg:w-1/4 h-auto bg-[#1f2937]  text-white p-4 sm:block flex flex-col">
-      <h2 className="text-xl font-bold mb-4">Navigation</h2>
+    <div className="w-full sm:w-1/4 bg-gray-800 text-white p-6 flex flex-col">
+      <h2 className="text-xl font-bold mb-6">Navigation</h2>
       <ul className="space-y-4">
         {sections.map((section, index) => (
           <li
             key={index}
-            className="cursor-pointer hover:text-gray-400"
+            className={`cursor-pointer text-lg font-medium ${
+    activeSection === index ? "text-gray-300 underline" : "hover:text-gray-400"
+  }`}
             onClick={() => setActiveSection(index)}
           >
             {section}
@@ -32,7 +30,7 @@ const SectionSlider = ({ experienceData, educationData, certificatesData }) => {
       case 0:
         return (
           <div className="p-8 bg-white rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold text-gray-800">Experience</h2>
+            <h2 className="text-2xl font-bold mb-4">Experience</h2>
             {experienceData.map((item, index) => (
               <Card
                 key={index}
@@ -47,7 +45,7 @@ const SectionSlider = ({ experienceData, educationData, certificatesData }) => {
       case 1:
         return (
           <div className="p-8 bg-white rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold text-gray-800">Education</h2>
+            <h2 className="text-2xl font-bold mb-4">Education</h2>
             {educationData.map((item, index) => (
               <Card
                 key={index}
@@ -62,7 +60,7 @@ const SectionSlider = ({ experienceData, educationData, certificatesData }) => {
       case 2:
         return (
           <div className="p-8 bg-white rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold text-gray-800">Certificates</h2>
+            <h2 className="text-2xl font-bold mb-4">Certificates</h2>
             {certificatesData.map((item, index) => (
               <Card
                 key={index}
@@ -80,12 +78,32 @@ const SectionSlider = ({ experienceData, educationData, certificatesData }) => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row h-auto border-solidborder-2 border-solid border-black bg-gray-100">
-      <Sidebar sections={sections} setActiveSection={setActiveSection} />
+    <div className="flex flex-col sm:flex-row bg-gray-100 h-full">
+      <Sidebar
+        sections={sections}
+        activeSection={activeSection}
+        setActiveSection={setActiveSection}
+      />
 
-      <div className="w-full lg:w-3/4 p-6 overflow-y-auto bg-gray-300 h-auto">
+      <div className="w-full sm:w-3/4 p-6 overflow-y-auto bg-gray-200">
         {renderSection()}
       </div>
+    </div>
+  );
+};
+
+const Card = ({ title, subtitle, period, items }) => {
+  return (
+    <div className="mb-6">
+      <h1 className="text-xl font-bold mb-2">{title}</h1>
+      <h2 className="text-gray-500 text-sm mb-4">
+        {subtitle} | {period}
+      </h2>
+      <ul className="list-disc pl-6 text-gray-700 space-y-2">
+        {items.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
     </div>
   );
 };
