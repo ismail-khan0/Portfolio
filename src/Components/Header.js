@@ -37,7 +37,7 @@ const Header = () => {
       {isMenuOpen && (
         <div className="absolute top-0 right-0 w-full bg-gray-800 p-4 space-y-4 text-white md:hidden">
           {/* Use Link for client-side routing in the mobile menu */}
-          <Link to="/" className="hover:text-gray-400"> onClick={toggleMenu}
+          <Link to="/" className="hover:text-gray-400" onClick={toggleMenu}> 
             Home
           </Link>
           <Link
