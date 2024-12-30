@@ -21,7 +21,6 @@ function App() {
         <Berries/>
         <About />
         <Skils />
-        <Berries />
         <Journey />
         <Experience />
         <Footer />
