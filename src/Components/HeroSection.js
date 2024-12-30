@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedin, FaInstagramSquare } from "react-icons/fa";
+import { FaLinkedin, FaInstagramSquare,FaGithub } from "react-icons/fa";
 import { IoLogoFacebook } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 import ismail from "../Images/image 17.png";
@@ -30,12 +30,12 @@ const HeroSection = () => {
               <MdOutlineEmail />
             </a>
             <a
-              href="https://www.facebook.com/share/o6HKYV8QCRzQmfUK/?mibextid=LQQJ4d"
+              href="https://github.com/ismail-khan0"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-xl sm:text-2xl bg-gray-200 rounded-full hover:bg-gray-300"
             >
-              <IoLogoFacebook />
+              <FaGithub />
             </a>
             <a
               href="https://www.instagram.com/its_ismail_khann?igsh=YngweDZkZjVzaDM0&utm_source=qr"
