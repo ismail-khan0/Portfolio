@@ -2,7 +2,7 @@ import React from "react";
 
 function Journey() {
   return (
-    <div className="p-4 flex flex-col items-center justify-center space-y-12 bg-gray-300">
+    <div id="Experience"  className="p-4 flex flex-col items-center justify-center space-y-12 bg-gray-300">
       <button className="py-2 mt-8 px-8 text-3xl font-semibold flex border-4 border-solid border-black">
         My Journey
       </button>

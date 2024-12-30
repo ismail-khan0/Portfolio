@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 function Berries() {
   return (
     <div className="w-full p-4 sm:p-8 flex flex-col space-y-4 bg-slate-950">
@@ -13,9 +13,12 @@ function Berries() {
         effective state management. These experiences have strengthened my
         adaptability and problem-solving abilities.
       </p>
-      <button className="p-2 text-sm sm:text-base text-gray-200 flex border-l border-solid border-gray-200">
+      <Link 
+        to="/experience" // This will scroll to the Experience component
+        className="p-2 text-sm sm:text-base text-gray-200 flex border-l border-solid border-gray-200"
+      >
         Read More
-      </button>
+      </Link>
     </div>
   );
 }

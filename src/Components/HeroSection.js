@@ -2,11 +2,14 @@ import React from "react";
 import { FaLinkedin, FaInstagramSquare } from "react-icons/fa";
 import { IoLogoFacebook } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
-import ismail from '../Images/image 17.png';
+import ismail from "../Images/image 17.png";
 
 const HeroSection = () => {
   return (
-    <div id="Home" className="flex flex-col sm:flex-row h-auto sm:h-screen items-center justify-between bg-gray-300 overflow-hidden">
+    <div
+      id="Home"
+      className="flex flex-col sm:flex-row h-auto sm:h-screen items-center justify-between bg-gray-300 overflow-hidden"
+    >
       {/* Left Section */}
       <div className=" mt-12 lg:mt-0 w-full sm:w-1/2 p-4 sm:p-8 flex flex-col items-center justify-center">
         <div>
@@ -21,13 +24,13 @@ const HeroSection = () => {
           </p>
           <div className="mt-4 sm:mt-6 flex space-x-4">
             <a
-              href="mailto:your-email@example.com"
+              href="mailto:ik8323253@gmail.com"
               className="p-2 text-xl sm:text-2xl bg-gray-200 rounded-full hover:bg-gray-300"
             >
               <MdOutlineEmail />
             </a>
             <a
-              href="https://linkedin.com/"
+              href="https://www.facebook.com/share/o6HKYV8QCRzQmfUK/?mibextid=LQQJ4d"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-xl sm:text-2xl bg-gray-200 rounded-full hover:bg-gray-300"
@@ -35,7 +38,7 @@ const HeroSection = () => {
               <IoLogoFacebook />
             </a>
             <a
-              href="https://linkedin.com/"
+              href="https://www.instagram.com/its_ismail_khann?igsh=YngweDZkZjVzaDM0&utm_source=qr"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-xl sm:text-2xl bg-gray-200 rounded-full hover:bg-gray-300"
@@ -43,7 +46,7 @@ const HeroSection = () => {
               <FaInstagramSquare />
             </a>
             <a
-              href="https://linkedin.com/"
+              href="https://www.linkedin.com/in/ismail-khan-?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-xl sm:text-2xl bg-gray-200 rounded-full hover:bg-gray-300"

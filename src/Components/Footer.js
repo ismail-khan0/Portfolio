@@ -5,14 +5,12 @@ import { MdOutlineEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 function Footer() {
-
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
     <div className="flex justify-center items-center flex-col bg-black">
-     
       <button
         onClick={scrollToTop}
         className="mt-6 text-white text-2xl cursor-pointer"
@@ -23,11 +21,10 @@ function Footer() {
         Back To Top
       </h1>
 
-      {/* Social Media Icons */}
       <div className="my-8 flex space-x-4">
         {/* Email Icon */}
         <a
-          href="mailto:your-email@example.com"
+          href="mailto:ik8323253@gmail.com"
           className="p-2 text-4xl bg-gray-200 rounded-full hover:bg-gray-300"
         >
           <MdOutlineEmail />
@@ -35,7 +32,7 @@ function Footer() {
 
         {/* Facebook */}
         <a
-          href="https://facebook.com/" // Update this URL to the correct Facebook profile link
+           href="https://www.facebook.com/share/o6HKYV8QCRzQmfUK/?mibextid=LQQJ4d"
           target="_blank"
           rel="noopener noreferrer"
           className="p-2 text-4xl bg-gray-200 rounded-full hover:bg-gray-300"
@@ -45,7 +42,7 @@ function Footer() {
 
         {/* Instagram */}
         <a
-          href="https://instagram.com/" // Update this URL to the correct Instagram profile link
+          href="https://www.instagram.com/its_ismail_khann?igsh=YngweDZkZjVzaDM0&utm_source=qr"
           target="_blank"
           rel="noopener noreferrer"
           className="p-2 text-4xl bg-gray-200 rounded-full hover:bg-gray-300"
@@ -53,9 +50,8 @@ function Footer() {
           <FaInstagramSquare />
         </a>
 
-        {/* LinkedIn Icon */}
         <a
-          href="https://linkedin.com/" // Update this URL to the correct LinkedIn profile link
+           href="https://www.linkedin.com/in/ismail-khan-?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
           target="_blank"
           rel="noopener noreferrer"
           className="p-2 text-4xl bg-gray-200 rounded-full hover:bg-gray-300"

@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Import Router components
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./Components/Header";
 import HeroSection from "./Components/HeroSection";
 import Berries from "./Components/Berries";
@@ -15,15 +15,26 @@ function App() {
       <div>
         <Header />
         <Routes>
-          
+          {/* The Home route will render all components */}
+          <Route
+            path="/"
+            element={
+              <>
+                <HeroSection />
+                <Berries />
+                <About />
+                <Skils />
+                <Journey />
+                <Experience />
+                <Footer />
+              </>
+            }
+          />
+          {/* Other routes */}
+          <Route path="/about" element={<><About /><Footer /></>} />
+          <Route path="/skills" element={<><Skils /><Footer /></>} />
+          <Route path="/experience" element={<><Journey /><Experience /><Footer /></>} />
         </Routes>
-        <HeroSection />
-        <Berries/>
-        <About />
-        <Skils />
-        <Journey />
-        <Experience />
-        <Footer />
       </div>
     </Router>
   );
