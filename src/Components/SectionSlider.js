@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Sidebar = ({ sections, setActiveSection, activeSection }) => {
   return (
     <div className="w-full sm:w-1/4 bg-gray-800 text-white p-6 flex flex-col">
-      <h2 className="text-xl font-bold mb-6">Navigation</h2>
+      <h2 className="text-xl font-bold mb-6"></h2>
       <ul className="space-y-4">
         {sections.map((section, index) => (
           <li
