@@ -8,6 +8,7 @@ import Skils from "./Components/Skils";
 import Journey from "./Components/Journey";
 import Experience from "./Components/Experience";
 import Footer from "./Components/Footer";
+import ProjectShowcase from "./Components/ProjectShowcase";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
                 <Skils />
                 <Journey />
                 <Experience />
+                <ProjectShowcase/>
                 <Footer />
               </>
             }

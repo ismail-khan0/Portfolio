@@ -2,3 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Ensure the container has 3D perspective */
+.transform-style-preserve-3d {
+    transform-style: preserve-3d;
+  }
+  
+  /* Hide the backface of the elements */
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  
+  /* Front side styling */
+  .front {
+    transform: rotateY(0deg);
+  }
+  
+  /* Back side styling */
+  .back {
+    transform: rotateY(180deg);
+  }
+  
+  /* Hover effect */
+  .group:hover .front {
+    transform: rotateY(180deg);
+  }
+  
+  .group:hover .back {
+    transform: rotateY(0deg);
+  }

@@ -2,7 +2,7 @@ import React from "react";
 import { FaLinkedin, FaInstagramSquare,FaGithub } from "react-icons/fa";
 import { IoLogoFacebook } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
-import ismail from "../Images/image 17.png";
+import ismail from '../Images/ik_img.PNG';
 
 const HeroSection = () => {
   return (
