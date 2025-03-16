@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./Components/Header";
 import HeroSection from "./Components/HeroSection";
@@ -9,34 +9,48 @@ import Journey from "./Components/Journey";
 import Experience from "./Components/Experience";
 import Footer from "./Components/Footer";
 import ProjectShowcase from "./Components/ProjectShowcase";
+import Whatsapp from "./Components/Whatsapp";
 
 function App() {
+  // Create refs for each section
+  const heroRef = useRef(null);
+  const berriesRef = useRef(null);
+  const aboutRef = useRef(null);
+  const skillsRef = useRef(null);
+  const journeyRef = useRef(null);
+  const experienceRef = useRef(null);
+  const projectShowcaseRef = useRef(null);
+  const footerRef = useRef(null);
+
+  // Function to scroll to a section
+  const scrollToSection = (ref) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <Router>
       <div>
-        <Header />
+        <Header scrollToSection={scrollToSection} refs={{ heroRef, aboutRef, skillsRef, experienceRef }} />
         <Routes>
-          {/* The Home route will render all components */}
           <Route
             path="/"
             element={
               <>
-                <HeroSection />
-                <Berries />
-                <About />
-                <Skils />
-                <Journey />
-                <Experience />
-                <ProjectShowcase/>
-                <Footer />
+                <div ref={heroRef}><HeroSection /></div>
+                <div ref={berriesRef}><Berries /></div>
+                <div ref={aboutRef}><About /></div>
+                <div ref={skillsRef}><Skils /></div>
+                <div ref={journeyRef}><Journey /></div>
+                <div ref={experienceRef}><Experience /></div>
+                <div ref={projectShowcaseRef}><ProjectShowcase /></div>
+                <div ref={footerRef}><Footer /></div>
               </>
             }
           />
-          {/* Other routes */}
-          <Route path="/about" element={<><About /><Footer /></>} />
-          <Route path="/skills" element={<><Skils /><Footer /></>} />
-          <Route path="/experience" element={<><Journey /><Experience /><Footer /></>} />
         </Routes>
+        <Whatsapp/>
       </div>
     </Router>
   );

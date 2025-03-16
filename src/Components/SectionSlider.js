@@ -2,14 +2,14 @@ import React, { useState } from "react";
 
 const Sidebar = ({ sections, setActiveSection, activeSection }) => {
   return (
-    <div className="w-full sm:w-1/4 bg-gray-300 text-black p-6 flex flex-col">
+    <div className="w-full sm:w-1/4 bg-gray-800 text-white p-6 flex flex-col">
       <h2 className="text-xl font-bold mb-6">Professional Background</h2>
       <ul className="space-y-4">
         {sections.map((section, index) => (
           <li
             key={index}
             className={`cursor-pointer text-lg font-medium ${
-    activeSection === index ? "text-black-300 underline" : "hover:text-gray-400"
+    activeSection === index ? "text-gray-300 underline" : "hover:text-gray-400"
   }`}
             onClick={() => setActiveSection(index)}
           >
