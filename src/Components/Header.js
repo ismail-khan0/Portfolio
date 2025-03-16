@@ -8,7 +8,7 @@ const Header = ({ scrollToSection, refs }) => {
   };
 
   return (
-    <header className="top-0 right-0 p-4 z-10 bg-black w-full ">
+    <header className="top-0 right-0 p-4 z-10 bg-black w-full">
       <nav className="flex justify-between items-center text-white text-lg">
         <div className="text-lg lg:text-2xl font-bold">PORTFOLIO</div>
 
@@ -25,6 +25,9 @@ const Header = ({ scrollToSection, refs }) => {
           <button onClick={() => scrollToSection(refs.experienceRef)} className="hover:text-gray-400">
             Experience
           </button>
+          <button onClick={() => scrollToSection(refs.projectShowcaseRef)} className="hover:text-gray-400">
+            Projects
+          </button>
         </div>
 
         <button className="md:hidden text-2xl" onClick={toggleMenu}>
@@ -33,7 +36,7 @@ const Header = ({ scrollToSection, refs }) => {
       </nav>
 
       {isMenuOpen && (
-        <div className="absolute top-0 right-0 w-full bg-gray-800 p-4 space-y-4 text-white md:hidden">
+        <div className="absolute top-16 right-0 w-full bg-gray-800 p-4 space-y-4 text-white md:hidden">
           <button onClick={() => { scrollToSection(refs.heroRef); toggleMenu(); }} className="block hover:text-gray-400">
             Home
           </button>
@@ -45,6 +48,9 @@ const Header = ({ scrollToSection, refs }) => {
           </button>
           <button onClick={() => { scrollToSection(refs.experienceRef); toggleMenu(); }} className="block hover:text-gray-400">
             Experience
+          </button>
+          <button onClick={() => { scrollToSection(refs.projectShowcaseRef); toggleMenu(); }} className="block hover:text-gray-400">
+            Projects
           </button>
         </div>
       )}

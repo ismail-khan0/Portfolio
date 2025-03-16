@@ -32,7 +32,7 @@ function App() {
   return (
     <Router>
       <div>
-        <Header scrollToSection={scrollToSection} refs={{ heroRef, aboutRef, skillsRef, experienceRef }} />
+        <Header scrollToSection={scrollToSection} refs={{ heroRef, aboutRef, skillsRef, experienceRef, projectShowcaseRef }} />
         <Routes>
           <Route
             path="/"
