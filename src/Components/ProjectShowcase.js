@@ -70,14 +70,14 @@ const ProjectShowcase = () => {
                 alt={project.name}
                 className="w-full h-52 object-cover rounded-lg mb-4"
               />
-              <h3 className="text-2xl font-semibold text-cyan-400">
+              <h3 className="text-2xl font-semibold text-white">
                 {project.name}
               </h3>
             </div>
 
             {/* Back Side (Hover Content) */}
             <div className="back absolute inset-0 bg-[#0D1B2A]/90 flex flex-col items-center justify-center p-4 text-white rounded-xl transition-transform duration-500 transform rotate-y-180 group-hover:rotate-y-0 backface-hidden">
-              <h3 className="text-2xl font-semibold text-cyan-400">
+              <h3 className="text-2xl font-semibold text-white">
                 {project.name}
               </h3>
               <p className="text-gray-300 mt-2">{project.description}</p>
@@ -86,7 +86,7 @@ const ProjectShowcase = () => {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-cyan-400 hover:text-white flex items-center space-x-2"
+                  className="text-white hover:text-white flex items-center space-x-2"
                 >
                   <FaGithub className="text-xl" />
                   <span>GitHub</span>
@@ -95,7 +95,7 @@ const ProjectShowcase = () => {
                   href={project.demo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-cyan-400 hover:text-white flex items-center space-x-2"
+                  className="text-white hover:text-white flex items-center space-x-2"
                 >
                   <FaExternalLinkAlt className="text-xl" />
                   <span>Demo</span>
