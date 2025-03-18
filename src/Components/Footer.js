@@ -2,7 +2,6 @@ import React from "react";
 import { FaLinkedin, FaInstagramSquare } from "react-icons/fa";
 import { IoLogoFacebook } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
-import { Link } from "react-router-dom";
 
 function Footer() {
   const scrollToTop = () => {
@@ -32,7 +31,7 @@ function Footer() {
 
         {/* Facebook */}
         <a
-           href="https://www.facebook.com/share/o6HKYV8QCRzQmfUK/?mibextid=LQQJ4d"
+          href="https://www.facebook.com/share/o6HKYV8QCRzQmfUK/?mibextid=LQQJ4d"
           target="_blank"
           rel="noopener noreferrer"
           className="p-2 text-4xl bg-gray-200 rounded-full hover:bg-gray-300"
@@ -51,7 +50,7 @@ function Footer() {
         </a>
 
         <a
-           href="https://www.linkedin.com/in/ismail-khan-?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+          href="https://www.linkedin.com/in/ismail-khan-?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
           target="_blank"
           rel="noopener noreferrer"
           className="p-2 text-4xl bg-gray-200 rounded-full hover:bg-gray-300"
