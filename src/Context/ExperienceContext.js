@@ -10,7 +10,7 @@ export const ExperienceProvider = ({ children }) => {
     {
       title: "Front-end Developer",
       subtitle: "Snipbyte | Hybrid (Remote & On-site)",
-      period: "January 2025 – Present",
+      period: "Oct 2024 – Present", 
       items: [
       "Developed responsive web apps using Next.js, React, TypeScript, and JavaScript.",
       "Managed state with Redux and Context API for efficient data flow.",
