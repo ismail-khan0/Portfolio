@@ -8,17 +8,32 @@ export const ExperienceProvider = ({ children }) => {
 
   const experienceData = [
     {
+      title: "Front-end Developer",
+      subtitle: "Snipbyte | Hybrid (Remote & On-site)",
+      period: "January 2025 – Present",
+      items: [
+      "Developed responsive web apps using Next.js, React, TypeScript, and JavaScript.",
+      "Managed state with Redux and Context API for efficient data flow.",
+      "Styled apps using Tailwind CSS and SaaS for modern designs.",
+      "Collaborated in Agile teams to deliver features on time.",
+      "Integrated RESTful APIs and GraphQL for seamless data handling.",
+      "Used GitHub for version control and team collaboration.",
+      "Wrote clean, reusable, and well-documented code for scalability.",
+      ],
+      },
+      
+      {
       title: "Intern Front-end Developer",
       subtitle: "Capregsoft | Wah Cantt, Pakistan",
       period: "March 2024 – June 2024",
       items: [
-        "Designed and developed responsive web applications using React, Tailwind CSS, TypeScript, and Bootstrap.",
-        "Improved codebase efficiency by refactoring and upgrading packages for better maintainability.",
-        "Collaborated with team members in an Agile Scrum environment, actively participating in sprints and retrospectives.",
-        "Documented code for scalability and streamlined future development.",
-        "Utilized Docker for containerization, optimizing development and deployment workflows.",
+      "Built responsive web apps using React, Tailwind CSS, TypeScript, and JavaScript.",
+      "Refactored code and upgraded packages for better maintainability.",
+      "Worked in Agile Scrum, participating in sprints and retrospectives.",
+      "Documented code for scalability and future development.",
+      "Used Docker for containerization and GitHub for version control.",
       ],
-    },
+      },
   ];
 
   const educationData = [
