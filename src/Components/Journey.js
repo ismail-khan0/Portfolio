@@ -7,7 +7,7 @@ function Journey() {
         My Journey
       </button>
       <div>
-      <p className="mb-4">
+      <p className="mb-4 mx-4">
         My journey into web development began with a passion for creating
         intuitive digital experiences. Starting as a<br/> self-learner, I honed my
         skills by working on personal projects and internships, where I explored

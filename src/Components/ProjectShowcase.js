@@ -11,14 +11,16 @@ const projects = [
   {
     name: "Behance Website",
     image: behance,
-    description: "A large-scale, modern, and responsive Behance-style portfolio...",
+    description:
+      "A large-scale, modern, and responsive Behance-style portfolio...",
     github: "https://github.com/ismail-khan0/IK-Behance",
     demo: "https://ik-behance.vercel.app/",
   },
   {
     name: "MailoCollection Website",
     image: mailocollcion,
-    description: "MailoCollection is a large-scale website built with JavaSript, HTML5, CSS3...",
+    description:
+      "MailoCollection is a large-scale website built with JavaSript, HTML5, CSS3...",
     github: "https://github.com/ismail-khan0/Shopping-Webisite",
     demo: "https://shopping-webisite.vercel.app/",
   },
@@ -68,7 +70,7 @@ const ProjectShowcase = () => {
               <img
                 src={project.image}
                 alt={project.name}
-                className="w-full h-52 object-cover rounded-lg mb-4"
+                className="w-full h-44 object-full rounded-lg mb-4"
               />
               <h3 className="text-2xl font-semibold text-white">
                 {project.name}
