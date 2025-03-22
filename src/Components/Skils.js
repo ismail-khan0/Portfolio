@@ -1,19 +1,28 @@
 import React from "react";
 import { FaHtml5, FaCss3Alt, FaSass, FaReact, FaBootstrap, FaGitAlt } from "react-icons/fa";
-import { SiJavascript, SiTailwindcss, SiNodedotjs, SiMysql, SiMongodb, SiTypescript } from "react-icons/si";
+import { SiJavascript, SiTailwindcss, SiNodedotjs, SiMysql, SiMongodb, SiTypescript, SiRedux ,SiNextdotjs, SiExpress} from "react-icons/si";
+import { PiWebhooksLogoBold } from "react-icons/pi";
 import { FaCogs } from "react-icons/fa"; // For C++
 import { FaRegHandshake } from "react-icons/fa"; // For Bidding
 
 function Skils() {
   const skillsData = [
     [
-      { icon: <FaHtml5 size={64} className="text-orange-500" />, title: "HTML5" },
-      { icon: <FaCss3Alt size={64} className="text-blue-500" />, title: "CSS" },
-      { icon: <FaSass size={64} className="text-pink-500" />, title: "Sass" },
-      { icon: <SiJavascript size={64} className="text-yellow-400" />, title: "JavaScript" },
+      { icon: <FaReact size={64} className="text-blue-400" />, title: "React" },
+      { icon: <SiTypescript size={64} className="text-blue-400" />, title: "TypeScript" },
+      { icon: <SiNextdotjs size={64} className="text-blue-400" />, title: "Next JS" },
+      { icon: <SiRedux size={64} className="text-blue-500" />, title: "Redux" },
+    
     ],
     [
-      { icon: <FaReact size={64} className="text-blue-400" />, title: "React" },
+      { icon: <SiJavascript size={64} className="text-yellow-400" />, title: "JavaScript" },
+      { icon: <FaHtml5 size={64} className="text-orange-500" />, title: "HTML5" },
+      { icon: <FaCss3Alt size={64} className="text-blue-500" />, title: "CSS" },
+      { icon: <PiWebhooksLogoBold size={64} className="text-purple-500" />, title: "Hooks" },
+
+    ],
+    [
+      { icon: <FaSass size={64} className="text-pink-500" />, title: "Sass" },
       { icon: <FaBootstrap size={64} className="text-purple-500" />, title: "Bootstrap" },
       { icon: <FaGitAlt size={64} className="text-orange-600" />, title: "Git" },
       { icon: <SiTailwindcss size={64} className="text-teal-400" />, title: "Tailwind" },
@@ -24,7 +33,7 @@ function Skils() {
     { icon: <SiNodedotjs size={64} className="text-green-600" />, title: "Node.js" },
     { icon: <SiMysql size={64} className="text-blue-600" />, title: "MySQL" },
     { icon: <SiMongodb size={64} className="text-green-500" />, title: "MongoDB" },
-    { icon: <SiTypescript size={64} className="text-blue-400" />, title: "TypeScript" },
+    { icon: <SiExpress size={64} className="text-blue-400" />, title: "Express.js" },
   ];
 
   const otherskillsData = [
