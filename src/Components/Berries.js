@@ -1,4 +1,4 @@
-import { useState } from "react";
+import react from "react";
 
 function Berries() {
   const handleDownload = () => {

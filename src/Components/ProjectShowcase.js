@@ -70,7 +70,7 @@ const ProjectShowcase = () => {
               <img
                 src={project.image}
                 alt={project.name}
-                className="w-full h-44 object-full rounded-lg mb-4"
+                className="w-full h-48 object-full rounded-lg mb-4"
               />
               <h3 className="text-2xl font-semibold text-white">
                 {project.name}
