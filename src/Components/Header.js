@@ -12,7 +12,7 @@ const Header = ({ scrollToSection, refs }) => {
       <nav className="flex justify-between items-center text-white text-lg">
         <div className="text-lg lg:text-2xl font-bold">PORTFOLIO</div>
 
-        <div className="hidden md:flex space-x-6 mr-6">
+        <div className="hidden md:flex space-x-6 mr-6 font-semibold">
           <button onClick={() => scrollToSection(refs.heroRef)} className="hover:text-gray-400">
             Home
           </button>
