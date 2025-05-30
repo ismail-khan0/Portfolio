@@ -80,7 +80,7 @@ function Skils() {
 {/* LEARNING NOW Section */}
 <div>
   <h1 className="text-2xl font-semibold mb-6 relative z-10 lg:ml-72 ml-24">
-    LEARNING NOW:
+   
   </h1>
   <div className="flex flex-col items-center sm:flex-row sm:flex-wrap sm:justify-center lg:justify-center lg:space-x-32">
     {learningData.map((skill, skillIndex) => (

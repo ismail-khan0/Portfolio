@@ -20,7 +20,7 @@ const HeroSection = () => {
             Ismail Khan
           </h2>
           <p className="text-gray-500 mt-2 text-sm sm:text-lg animate-slide-up">
-            Front-end Developer
+            Full Stack Developer
           </p>
           <div className="mt-4 sm:mt-6 flex space-x-4">
             <a

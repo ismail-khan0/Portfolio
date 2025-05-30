@@ -13,11 +13,11 @@ function About() {
         About Me
       </button>
       <p className="mt-2 whitespace-pre-line text-center text-sm md:text-base lg:text-lg">
-        Hi, I’m Ismail Khan, a passionate Frontend Developer with a keen
-        interest in crafting intuitive and user-friendly <br /> web experiences.
-        I specialize in building responsive and dynamic applications using
-        modern technologies <br /> like React, Tailwind CSS, TypeScript, and
-        Bootstrap.
+        Hi, I’m Ismail Khan — a passionate Full-Stack Developer with a strong
+        focus on creating intuitive, user-friendly, and<br/> high-performance web
+        applications. I specialize in building scalable and responsive solutions
+        using modern<br/> technologies such as React.js, Next.js, TypeScript, Redux,
+        Node.js, Socket.io, MongoDB, and Tailwind CSS
       </p>
       <button className="px-4 font-bold flex border-2 border-solid border-black border-t-0 border-b-0">
         Explore
